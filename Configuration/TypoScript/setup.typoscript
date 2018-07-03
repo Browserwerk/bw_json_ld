@@ -1,3 +1,25 @@
+# Module configuration
+module.tx_jctjsonld_web_jctjsonldjsongenerator {
+    persistence {
+        storagePid = {$module.tx_jctjsonld_jsongenerator.persistence.storagePid}
+    }
+    view {
+        templateRootPaths {
+            0 = EXT:jct_json_ld/Resources/Private/Backend/Templates/
+            1 = {$module.tx_jctjsonld_jsongenerator.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:jct_json_ld/Resources/Private/Backend/Partials/
+            1 = {$module.tx_jctjsonld_jsongenerator.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:jct_json_ld/Resources/Private/Backend/Layouts/
+            1 = {$module.tx_jctjsonld_jsongenerator.view.layoutRootPath}
+        }
+    }
+}
+
+
 # Render json_ld_content
 page.headerData.1337 = TEXT
 page.headerData.1337.field = json_ld_content

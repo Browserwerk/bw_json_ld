@@ -1,7 +1,18 @@
 {
     "modules": [],
     "properties": {
-        "backendModules": [],
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "Generates JSON-LD ",
+                "key": "jsongenerator",
+                "mainModule": "web",
+                "name": "JSON-LD Generator",
+                "tabLabel": "JSON-LD Generator"
+            }
+        ],
         "description": "A simple and interactive JSON-LD Generator",
         "emConf": {
             "category": "module",
@@ -32,7 +43,7 @@
     },
     "wires": [],
     "log": {
-        "last_modified": "2018-07-03 08:43",
+        "last_modified": "2018-07-03 03:05",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
