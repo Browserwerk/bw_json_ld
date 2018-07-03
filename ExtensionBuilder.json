@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "A simple and interactive JSON-LD Generator",
+        "emConf": {
+            "category": "module",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "0.0.1"
+        },
+        "extensionKey": "jct_json_ld",
+        "name": "JSON-LD Generator",
+        "originalExtensionKey": "jct_json_ld",
+        "originalVendorName": "JeremieConstant",
+        "persons": [
+            {
+                "company": "",
+                "email": "mail@jeremieconstant.de",
+                "name": "J\u00e9r\u00e9mie Constant",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "JeremieConstant"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-07-03 08:43",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}

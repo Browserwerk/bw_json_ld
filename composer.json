@@ -1,0 +1,28 @@
+{
+    "name": "jeremieconstant/jct-json-ld",
+    "type": "typo3-cms-extension",
+    "description": "A simple and interactive JSON-LD Generator",
+    "authors": [
+        {
+            "name": "J\u00e9r\u00e9mie Constant",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeremieConstant\\JctJsonLd\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeremieConstant\\JctJsonLd\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "jct_json_ld": "self.version",
+        "typo3-ter/jct-json-ld": "self.version"
+    }
+}
