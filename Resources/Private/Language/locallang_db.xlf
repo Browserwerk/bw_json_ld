@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-07-09T15:40:57Z" product-name="my_ext">
+        <header/>
+        <body>
+
+            <trans-unit id="pages.palette_title">
+                <source>JSON-LD Settings</source>
+            </trans-unit>
+
+
+            <trans-unit id="pages.json_ld">
+                <source>JSON-LD Content</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>
