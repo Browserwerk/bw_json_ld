@@ -6,7 +6,7 @@ defined('TYPO3_MODE') || die('Access denied.');
     'jsongenerator', // Submodule key
     '', // Position
     [
-
+        'Backend' => 'list',
     ],
     [
         'access' => 'user,group',
