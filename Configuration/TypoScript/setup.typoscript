@@ -1,0 +1,4 @@
+# Render json_ld_content
+page.headerData.1337 = TEXT
+page.headerData.1337.field = json_ld_content
+page.headerData.1337.wrap = <script type="application/ld+json">{|}</script>
