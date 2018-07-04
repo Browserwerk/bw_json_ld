@@ -2,14 +2,14 @@
 <f:layout name="Default" />
 
 <f:section name="content">
-<<<<<<< HEAD
     <p>Please add JSON-LD Data via Page-Settings!</p>
     <h1>JSON-LD:</h1>
-    <pre>{json_ld_content}</pre>
-=======
-    <h1>JSON-LD:</h1>
-    <h2>{json_ld_content}</h2>
->>>>>>> 78c82ba06dedad85fd70942adea2a6384e2c1ccc
+    <pre>{jsonld}</pre>
+
+    <f:form>
+        <f:form.select name="contextType" options="{contextTypes}" />
+    </f:form>
+
 </f:section>
 </html>
 
