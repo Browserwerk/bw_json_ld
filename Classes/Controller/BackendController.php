@@ -10,6 +10,7 @@ namespace JeremieConstant\JctJsonLd\Controller;
  * LICENSE.txt file that was distributed with this source code.
  */
 
+use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 
@@ -18,13 +19,22 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-    public function initializeAction()
-    {
 
-    }
+    /**
+     * @var \JeremieConstant\JctJsonLd\Domain\Repository\BackendRepository
+     * @inject
+     */
+    protected $backendRepository = NULL;
 
     public function listAction()
     {
+        // Current page of WEB module
+        $currentPid = $_GET['id'];
 
+        // Get JSON-LD data of current page
+        $json = $this->backendRepository->findJsonByPid($currentPid);
+        
+        // Assign to Backend
+        $this->view->assignMultiple($json);
     }
 }
