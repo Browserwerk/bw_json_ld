@@ -51,6 +51,17 @@ class Context
     }
 
     /**
+     * Return the array of structure properties.
+     *
+     * @return array
+     */
+    public function getStructure()
+    {
+        return $this->context->getStructure();
+    }
+
+
+    /**
      * Generate the JSON-LD script tag.
      *
      * @return string

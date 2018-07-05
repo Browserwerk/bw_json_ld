@@ -109,6 +109,16 @@ abstract class AbstractContext implements \JeremieConstant\JctJsonLd\Controller\
     }
 
     /**
+     * Getter Method for structure
+     *
+     * @return array
+     */
+    public function getStructure()
+    {
+        return $this->structure;
+    }
+
+    /**
      * Creates context properties.
      *
      * @return array
