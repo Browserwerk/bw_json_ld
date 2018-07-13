@@ -14,7 +14,7 @@ JSON-LD Generator
 .. only:: html
 
 	:Classification:
-		jct_json_ld
+		bw_json_ld
 
 	:Version:
 		|release|

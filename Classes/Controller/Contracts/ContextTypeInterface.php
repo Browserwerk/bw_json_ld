@@ -1,6 +1,6 @@
 <?php
 
-namespace JeremieConstant\JctJsonLd\Controller\Contracts;
+namespace JeremieConstant\BwJsonLd\Controller\Contracts;
 
 interface ContextTypeInterface
 {

@@ -1,5 +1,5 @@
 <?php
-namespace JeremieConstant\JctJsonLd\Domain\Repository;
+namespace JeremieConstant\BwJsonLd\Domain\Repository;
 
 /**
  * Copyright notice

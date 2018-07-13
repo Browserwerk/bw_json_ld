@@ -1,20 +1,20 @@
 # Module configuration
-module.tx_jctjsonld_web_jctjsonldjsongenerator {
+module.tx_BwJsonLd_web_BwJsonLdjsongenerator {
     persistence {
-        storagePid = {$module.tx_jctjsonld_jsongenerator.persistence.storagePid}
+        storagePid = {$module.tx_BwJsonLd_jsongenerator.persistence.storagePid}
     }
     view {
         templateRootPaths {
-            0 = EXT:jct_json_ld/Resources/Private/Backend/Templates/
-            1 = {$module.tx_jctjsonld_jsongenerator.view.templateRootPath}
+            0 = EXT:bw_json_ld/Resources/Private/Backend/Templates/
+            1 = {$module.tx_BwJsonLd_jsongenerator.view.templateRootPath}
         }
         partialRootPaths {
-            0 = EXT:jct_json_ld/Resources/Private/Backend/Partials/
-            1 = {$module.tx_jctjsonld_jsongenerator.view.partialRootPath}
+            0 = EXT:bw_json_ld/Resources/Private/Backend/Partials/
+            1 = {$module.tx_BwJsonLd_jsongenerator.view.partialRootPath}
         }
         layoutRootPaths {
-            0 = EXT:jct_json_ld/Resources/Private/Backend/Layouts/
-            1 = {$module.tx_jctjsonld_jsongenerator.view.layoutRootPath}
+            0 = EXT:bw_json_ld/Resources/Private/Backend/Layouts/
+            1 = {$module.tx_BwJsonLd_jsongenerator.view.layoutRootPath}
         }
     }
 }

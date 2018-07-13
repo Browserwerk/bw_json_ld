@@ -1,6 +1,6 @@
 <?php
 
-namespace JeremieConstant\JctJsonLd\Controller\ContextTypes;
+namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
 
 class Article extends AbstractContext
 {

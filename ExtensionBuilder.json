@@ -26,9 +26,9 @@
             "targetVersion": "8.7.0-8.7.99",
             "version": "0.0.1"
         },
-        "extensionKey": "jct_json_ld",
+        "extensionKey": "bw_json_ld",
         "name": "JSON-LD Generator",
-        "originalExtensionKey": "jct_json_ld",
+        "originalExtensionKey": "bw_json_ld",
         "originalVendorName": "JeremieConstant",
         "persons": [
             {

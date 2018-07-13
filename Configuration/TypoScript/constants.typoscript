@@ -1,14 +1,14 @@
-module.tx_jctjsonld_jsongenerator {
+module.tx_BwJsonLd_jsongenerator {
     view {
-        # cat=module.tx_jctjsonld_jsongenerator/file; type=string; label=Path to template root (BE)
-        templateRootPath = EXT:jct_json_ld/Resources/Private/Backend/Templates/
-        # cat=module.tx_jctjsonld_jsongenerator/file; type=string; label=Path to template partials (BE)
-        partialRootPath = EXT:jct_json_ld/Resources/Private/Backend/Partials/
-        # cat=module.tx_jctjsonld_jsongenerator/file; type=string; label=Path to template layouts (BE)
-        layoutRootPath = EXT:jct_json_ld/Resources/Private/Backend/Layouts/
+        # cat=module.tx_BwJsonLd_jsongenerator/file; type=string; label=Path to template root (BE)
+        templateRootPath = EXT:bw_json_ld/Resources/Private/Backend/Templates/
+        # cat=module.tx_BwJsonLd_jsongenerator/file; type=string; label=Path to template partials (BE)
+        partialRootPath = EXT:bw_json_ld/Resources/Private/Backend/Partials/
+        # cat=module.tx_BwJsonLd_jsongenerator/file; type=string; label=Path to template layouts (BE)
+        layoutRootPath = EXT:bw_json_ld/Resources/Private/Backend/Layouts/
     }
     persistence {
-        # cat=module.tx_jctjsonld_jsongenerator//a; type=string; label=Default storage PID
+        # cat=module.tx_BwJsonLd_jsongenerator//a; type=string; label=Default storage PID
         storagePid =
     }
 }

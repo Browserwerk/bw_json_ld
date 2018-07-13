@@ -6,7 +6,7 @@ if (!defined('TYPO3_MODE')) {
 // Configure new fields:
 $fields = array(
     'json_ld_content' => array(
-        'label' => 'LLL:EXT:jct_json_ld/Resources/Private/Language/locallang_db.xlf:pages.json_ld',
+        'label' => 'LLL:EXT:bw_json_ld/Resources/Private/Language/locallang_db.xlf:pages.json_ld',
         'exclude' => 1,
         'config' => array(
             'type' => 'text',
@@ -22,7 +22,7 @@ $fields = array(
 // Make fields visible in the TCEforms:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages', // Table name
-    '--palette--;LLL:EXT:jct_json_ld/Resources/Private/Language/locallang_db.xlf:pages.palette_title;json_ld', // Field list to add
+    '--palette--;LLL:EXT:bw_json_ld/Resources/Private/Language/locallang_db.xlf:pages.palette_title;json_ld', // Field list to add
     '1', // List of specific types to add the field list to. (If empty, all type entries are affected)
     'after:nav_title' // Insert fields before (default) or after one, or replace a field
 );

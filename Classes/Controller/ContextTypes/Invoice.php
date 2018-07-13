@@ -1,5 +1,5 @@
 <?php
-namespace JeremieConstant\JctJsonLd\Controller\ContextTypes;
+namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
 class Invoice extends AbstractContext
 {
     /**

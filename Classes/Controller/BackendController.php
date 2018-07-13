@@ -1,5 +1,5 @@
 <?php
-namespace JeremieConstant\JctJsonLd\Controller;
+namespace JeremieConstant\BwJsonLd\Controller;
 
 /**
  * Copyright notice
@@ -20,7 +20,7 @@ class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 {
 
     /**
-     * @var \JeremieConstant\JctJsonLd\Controller\Domain\Repository\BackendRepository
+     * @var \JeremieConstant\BwJsonLd\Domain\Repository\BackendRepository
      * @inject
      */
     protected $backendRepository = NULL;
@@ -42,38 +42,18 @@ class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         return $contextTypes;
     }
 
+    /*
+     * @var string $contextType
+     * @return array
+     * */
+
+    private function getContext($contextType){
+        $context = Context::create($contextType);
+        return $context;
+    }
+
     public function listAction()
     {
-
-        $data = [
-            'headline' => 'Article headline',
-            'description' => 'A most wonderful article',
-            'mainEntityOfPage' => [
-                'url' => 'https://google.com/article',
-            ],
-            'image' => [
-                'url' => 'https://google.com/thumbnail1.jpg',
-                'height' => 800,
-                'width' => 800,
-            ],
-            'datePublished' => '2015-02-05T08:00:00+08:00',
-            'dateModified' => '2015-02-05T09:20:00+08:00',
-            'author' => [
-                'name' => 'John Doe',
-            ],
-            'publisher' => [
-                'name' => 'Google',
-                'logo' => [
-                    'url' => 'https://google.com/logo.jpg',
-                    'width' => 600,
-                    'height' => 60,
-                ]
-            ],
-        ];
-
-        $context = Context::create('NewsArticle', $data);
-        $jsonld = json_encode($context->getProperties(), JSON_UNESCAPED_SLASHES);
-
         // Current page of WEB module
         $currentPid = $_GET['id'];
 
@@ -81,11 +61,16 @@ class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         $json = $this->backendRepository->findJsonByPid($currentPid);
         
         // Assign to backend view
-        $this->view->assign('jsonld',$jsonld);
+        $this->view->assign('jsonld',$json);
 
         $assignments = array(
             'contextTypes' => $this->getContextTypes()
         );
         $this->view->assignMultiple($assignments);
+    }
+
+    public function createAction()
+    {
+
     }
 }

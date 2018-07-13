@@ -1,9 +1,9 @@
 <?php
 
-namespace JeremieConstant\JctJsonLd\Controller;
+namespace JeremieConstant\BwJsonLd\Controller;
 
 use InvalidArgumentException;
-use JeremieConstant\JctJsonLd\Controller\Contracts\ContextTypeInterface;
+use JeremieConstant\BwJsonLd\Controller\Contracts\ContextTypeInterface;
 
 class Context
 {
@@ -90,7 +90,7 @@ class Context
 
         // Create local context type class
         $class = ucwords(str_replace(['-', '_'], ' ', $name));
-        $class = '\\JeremieConstant\JctJsonLd\Controller\\ContextTypes\\' . str_replace(' ', '', $class);
+        $class = '\\JeremieConstant\BwJsonLd\Controller\\ContextTypes\\' . str_replace(' ', '', $class);
 
         // Check for local context type
         if (class_exists($class)) {

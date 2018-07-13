@@ -1,11 +1,11 @@
 <?php
 
-namespace JeremieConstant\JctJsonLd\Controller\ContextTypes;
+namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
 
 use DateTime;
-use JeremieConstant\JctJsonLd\Controller\Context;
+use JeremieConstant\BwJsonLd\Controller\Context;
 
-abstract class AbstractContext implements \JeremieConstant\JctJsonLd\Controller\Contracts\ContextTypeInterface
+abstract class AbstractContext implements \JeremieConstant\BwJsonLd\Controller\Contracts\ContextTypeInterface
 {
     /**
      * Context type
