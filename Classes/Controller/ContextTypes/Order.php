@@ -1,5 +1,5 @@
 <?php
-namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
+namespace Browserwerk\BwJsonLd\Controller\ContextTypes;
 class Order extends AbstractContext
 {
     /**

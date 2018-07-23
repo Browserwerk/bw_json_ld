@@ -1,9 +1,9 @@
 <?php
 
-namespace JeremieConstant\BwJsonLd\Controller;
+namespace Browserwerk\BwJsonLd\Controller;
 
 use InvalidArgumentException;
-use JeremieConstant\BwJsonLd\Controller\Contracts\ContextTypeInterface;
+use Browserwerk\BwJsonLd\Controller\Contracts\ContextTypeInterface;
 
 class Context
 {
@@ -90,7 +90,7 @@ class Context
 
         // Create local context type class
         $class = ucwords(str_replace(['-', '_'], ' ', $name));
-        $class = '\\JeremieConstant\BwJsonLd\Controller\\ContextTypes\\' . str_replace(' ', '', $class);
+        $class = '\\Browserwerk\BwJsonLd\Controller\\ContextTypes\\' . str_replace(' ', '', $class);
 
         // Check for local context type
         if (class_exists($class)) {

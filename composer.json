@@ -1,5 +1,5 @@
 {
-    "name": "jeremieconstant/bw-json-ld",
+    "name": "browserwerk/bw-json-ld",
     "type": "typo3-cms-extension",
     "description": "A simple and interactive JSON-LD Generator",
     "authors": [
@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JeremieConstant\\BwJsonLd\\": "Classes"
+            "Browserwerk\\BwJsonLd\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JeremieConstant\\BwJsonLd\\Tests\\": "Tests"
+            "Browserwerk\\BwJsonLd\\Tests\\": "Tests"
         }
     },
     "replace": {

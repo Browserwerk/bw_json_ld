@@ -1,6 +1,6 @@
 <?php
 
-namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
+namespace Browserwerk\BwJsonLd\Controller\ContextTypes;
 
 class ImageObject extends AbstractContext
 {

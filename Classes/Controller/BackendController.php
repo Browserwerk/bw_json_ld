@@ -1,5 +1,5 @@
 <?php
-namespace JeremieConstant\BwJsonLd\Controller;
+namespace Browserwerk\BwJsonLd\Controller;
 
 /**
  * Copyright notice
@@ -20,7 +20,7 @@ class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 {
 
     /**
-     * @var \JeremieConstant\BwJsonLd\Domain\Repository\BackendRepository
+     * @var \Browserwerk\BwJsonLd\Domain\Repository\BackendRepository
      * @inject
      */
     protected $backendRepository = NULL;

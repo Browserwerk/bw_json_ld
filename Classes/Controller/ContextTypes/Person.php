@@ -1,6 +1,6 @@
 <?php
 
-namespace JeremieConstant\BwJsonLd\Controller\ContextTypes;
+namespace Browserwerk\BwJsonLd\Controller\ContextTypes;
 
 class Person extends AbstractContext
 {

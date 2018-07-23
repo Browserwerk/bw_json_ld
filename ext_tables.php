@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') || die('Access denied.');
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-    'JeremieConstant.BwJsonLd',
+    'Browserwerk.BwJsonLd',
     'web', // Make module a submodule of 'web'
     'jsongenerator', // Submodule key
     '', // Position

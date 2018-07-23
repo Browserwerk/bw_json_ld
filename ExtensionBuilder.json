@@ -29,7 +29,7 @@
         "extensionKey": "bw_json_ld",
         "name": "JSON-LD Generator",
         "originalExtensionKey": "bw_json_ld",
-        "originalVendorName": "JeremieConstant",
+        "originalVendorName": "Browserwerk",
         "persons": [
             {
                 "company": "",
@@ -39,7 +39,7 @@
             }
         ],
         "plugins": [],
-        "vendorName": "JeremieConstant"
+        "vendorName": "Browserwerk"
     },
     "wires": [],
     "log": {
